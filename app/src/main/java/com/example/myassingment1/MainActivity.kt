@@ -11,8 +11,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+class MainActivity : AppCompatActivity()
+{
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
@@ -24,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         btnSuggestions.setOnClickListener()
         {
-
+            //Log is used to manually check that the code runs perfectly
             Log.d(TAG,"confirm that the Suggestions button is pressed.")
 
             val sparks = edtSpark.text.toString().trim()
@@ -56,10 +58,12 @@ class MainActivity : AppCompatActivity() {
             {
                 "Please find a valid spark"
             }
+            //txtDisplay will display the messages.
             txtDisplay.text = result
 
             Log.i(TAG,"Confirm that the correct message is sent.")
         }
+        // Reset button ensures that all fields have been cleared
         btnReset.setOnClickListener()
         {
             Log.d(TAG,"Confirm that the reset button is pressed.")

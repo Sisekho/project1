@@ -7,14 +7,24 @@
     android:background="#F44336"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/txtDisplay"
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="76dp"
-        android:background="#F44336"
-        android:text="Enter Spark"
+        android:background="#9D0505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/typewriter" />
+
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="126dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="320dp"
+        android:background="#FFFFFF"
+        android:text="Spark will appear here"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,16 +35,19 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="164dp"
         android:ems="10"
+        android:hint="Enter time of day"
         android:inputType="text"
+        android:textColor="#020101"
+        android:textColorLink="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnReset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="340dp"
+        android:layout_width="137dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="452dp"
         android:text="Reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -43,10 +56,11 @@
         android:id="@+id/btnSuggestions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="342dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="452dp"
         android:text="Suggestions"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
